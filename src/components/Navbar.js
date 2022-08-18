@@ -77,7 +77,7 @@ return(
           <div class="alert alert-success" id="assistant" role="alert">
             <center><h5>Tap On The Mic icon to Talk</h5></center>
             <h4 class="alert-heading">Try Asking:-</h4>
-            <p>Motivate Me.</p>
+            <p>Give Me Some Motivation.</p>
             <p>Tell Me About saravana stores.</p>
             <p>what is the weather in Chennai.</p>
             <p>What is the revenue of saravana stores.</p>
