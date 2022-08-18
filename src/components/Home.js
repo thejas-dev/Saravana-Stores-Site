@@ -32,7 +32,7 @@ useEffect(()=>{
             if (status === 'ONLINE') {
             if (!this.greetingWasSaid) {
             await alanBtnInstance.activate();
-            alanBtnInstance.playText("Welcome To The Legend Suuper Saravana Stores , Do You Need Any Information?");
+            alanBtnInstance.playText("Welcome To The Legend Saravana Stores , Do You Need Any Information?");
             this.greetingWasSaid = true
                 }
             }
