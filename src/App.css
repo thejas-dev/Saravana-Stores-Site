@@ -1,38 +1,342 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  scroll-behavior: smooth;
 }
+.overflow-hidden{
+  opacity: 0%;
+}
+.loadify{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgb(48, 48, 48);
+    position: absolute;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.loadify>div{
+    height: 100px;
+    width: 100px;
+    border: 15px solid gray;
+    border-top-color: rgb(0, 140, 255);
+    position:absolute;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 70px;
+    animation: spin 2s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.alert{
+  display: none;
+}
+.assist{
+  display: block;
+  position: fixed;
+  margin:auto;
+  bottom:40px;
+  z-index: 1;
+  opacity: 0;
+  animation: assistance forwards 1s
+}
+@keyframes assistance{
+  100%{
+    opacity: 1;
+    bottom: 0px;
   }
 }
+.fadeout{
+  animation: fadeout-ani forwards 2s;
+}
+.fadein{
+  animation: fadein-ani forwards 1s
+}
+.fadein2{
+  display: block;
+  opacity: 0;
+  right: -50px;
+  animation:  fadein-ani2 forwards 1.7s;
+}
+.fadeout2{
+  opacity: 100;
+  right: 0px;
+  animation: fadeout-ani2 forwards 1s;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+
+@keyframes fadein-ani{
+    100%{
+      opacity: 1;
+    }
+}
+@keyframes fadein-ani2{
+    100%{
+      opacity: 1;
+      right:  0px;
+    }
+}
+@keyframes fadeout-ani{
+    100%{
+      opacity: 0;
+    }
+}
+@keyframes fadeout-ani2{
+    100%{
+      opacity: 0;
+      right: 50px;
+      display: none;
+    }
+}
+.main-heading{
+  font-size: 39px;
+  color: rgb(204,18,18);
+}
+.mens-heading{
+  font-size: 26px;
+  color: #310ff2;
+  font-family:  Times New Roman;
+}
+.underline-mens{
+  height: 4px;
+  width: 20rem;
+  background-color: #f76c2f;
+  margin-top:10px;
+  margin-bottom: 10px;
+
+}
+.mens-underline{
+    height: 4px;
+  width: 10rem;
+  background-color: #f76c2f;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.bg-c-light{
+  background-color: #f2f2f2
+}
+@media(max-width:400px){
+  .main-heading{
+    font-size: 29px;
+  }
+}
+.gallery-heading{
+  font-size: 30px;
+  color: rgb();
+}
+.underline-vmc{
+  height: 4px;
+  width: 14rem;
+  background-color: #f76c2f;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.underline{
+  height: 4px;
+  width: 15rem;
+  background-color: #f76c2f;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.underline-vlogs{
+  height: 4px;
+  width: 5rem;
+  background-color: #f76c2f;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.underline-branch{
+   height: 4px;
+  width: 14rem;
+  background-color: #f76c2f;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.bands-underline{
+   height: 4px;
+  width: 8rem;
+  background-color: #f76c2f;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+.social-icon{
+  height: 40px;
+  width: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 7px;
+  margin-right: 11px;
+  cursor: pointer;
+
+}
+.cancel{
+  cursor: pointer;
+
+}
+.social-media{
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  top: 330px;
+  display: block;
+  transition: 0.8s
+}
+.social-icon:hover{
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.social-twitter{
+  background-color: #55acee
+}
+.social-facebook{
+  background-color: #3b5999
+}
+.social-google{
+  background-color: #dd4b39
+}
+.social-instagram{
+  background-color: #bc2a8d
+}
+.social-whatsapp{
+  background-color: #38d400
+}
+.underline-kids{
+   height: 4px;
+  width: 16rem;
+  background-color: #f76c2f;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.womens-underline{
+   height: 4px;
+  width: 7rem;
+  background-color: #f76c2f;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.dropdown-menu{
+  transition: .4s;
+
 }
 
-.App-link {
-  color: #61dafb;
+.carousel .carousel-item{
+  height: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.carousel-item img{
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+.heading-about{
+    color: rgb(204,18,18);
+  font-size: 39px;
+  font-weight: bold;
+}
+.branchimg .slideimg{
+    height: 400px;
+
+}
+
+.slideimg img{
+  
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media(max-width: 680px){
+  .carousel .carousel-item{
+    height: 220px;
+    
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+.navimg{
+  height:75px;
+  width: 390px;
+
+}
+.img-container{
+  margin-left: 50px
+}
+
+@media(max-width: 600px){
+  .navimg{
+    width: auto;
   }
+  .img-container{
+  margin-left: 8px
+}
+}
+
+.owner{
+  font-size: 25px;
+  font-weight: bold;
+
+}
+.center{
+  left: 100px;
+}
+.owner-text{
+  font-size: 18px;
+  font-family: Times New Roman;
+}
+.collections-tabs{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.margintop{
+  margin-top: 110px;
+}
+
+.margintop-feedback{
+  margin-top: 90px;
+}
+
+.margintop-collections{
+  margin-top: 95px;
+}
+.list-item{
+  list-style: none;
+  padding:12px;
+  font-family: 'Open Sans', sans-serif;
+
+
+}
+.links{
+  text-decoration: none;
+
+}
+
+.gallery-heading{
+  font-weight: bold;
+}
+.gallery-underline{
+  height: 4px;
+  width: 13rem;
+  background-color: #fc1303;
+  margin-top:10px;
+  margin-bottom: 10px;
+
+}
+.hover{
+  cursor: pointer;
+}
+.hover:hover{
+  transform: scale(1.1);
+  transition: all 0.5s
 }
