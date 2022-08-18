@@ -1,6 +1,6 @@
 # Saravana Stores Web App
 
-The Link Of This Site is (https://legendpa-saravana-stores.netlify.app).
+The Link Of This Site is (https://legendpa-saravana-stores-thejas.netlify.app).
 
 ## Description
 
